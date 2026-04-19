@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Databases Enhancement | Ryan Orton</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Ryan Orton</h1>
+    <p>CS 499 ePortfolio</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="self-assessment.html">Professional Self-Assessment</a>
+      <a href="code-review.html">Code Review</a>
+      <a href="software-design.html">Software Design</a>
+      <a href="algorithms.html">Algorithms & Data Structures</a>
+      <a href="databases.html">Databases</a>
+    </nav>
+
+  </header>
+  <main>
+
+<section>
+  <h2>Databases Enhancement</h2>
+  <h3>Artifact Description</h3>
+  <p>This artifact is a mobile Weight Tracker application originally created in CS 360, Mobile Architecture and Programming. I selected this artifact for my ePortfolio because it provides a strong foundation for demonstrating multiple areas of computer science, including software design and engineering, algorithms and data structures, and databases.</p>
+  <h3>Why I Selected This Artifact</h3>
+  <p>For the databases category, this artifact was especially appropriate because it already relied on SQLite for storing user accounts, goal weights, and weight history, which gave me a practical starting point for improving database structure, data integrity, and security.</p>
+  <h3>Enhancement Performed</h3>
+  <p>In the original version of the application, user credentials were stored in plain text, weight entries were not tied to a specific user, and goal weights were stored globally instead of per account. To enhance the artifact, I redesigned the database schema so that each user has a unique identifier, each weight entry is associated with a specific user through a foreign key, and each goal weight is tied to one user record. I also improved security by hashing passwords before storing them in the database instead of saving raw passwords directly.</p>
+  <h3>Reflection</h3>
+  <p>Through this enhancement process, I learned that database design is not only about storing data, but about organizing relationships in a way that protects accuracy, privacy, and long-term maintainability. One challenge I faced was that changing the schema also required me to update the rest of the application logic.</p>
+</section>
+<section class="files">
+  <h2>Files</h2>
+  <a href="assets/docs/Weight Tracker Original.zip">Original Artifact</a>
+  <a href="assets/docs/Weight Tracker Final.zip">Enhanced Artifact</a>
+  <a href="assets/docs/Databases Narrative.docx">Narrative (.docx)</a>
+</section>
+
+  </main>
+  <div class="footer">CS 499 ePortfolio • Weight Tracker artifact • GitHub Pages starter</div>
+</body>
+</html>

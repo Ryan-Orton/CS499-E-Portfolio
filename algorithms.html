@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithms Enhancement | Ryan Orton</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Ryan Orton</h1>
+    <p>CS 499 ePortfolio</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="self-assessment.html">Professional Self-Assessment</a>
+      <a href="code-review.html">Code Review</a>
+      <a href="software-design.html">Software Design</a>
+      <a href="algorithms.html">Algorithms & Data Structures</a>
+      <a href="databases.html">Databases</a>
+    </nav>
+
+  </header>
+  <main>
+
+<section>
+  <h2>Algorithms and Data Structures Enhancement</h2>
+  <h3>Artifact Description</h3>
+  <p>The artifact I selected for this enhancement is my Weight Tracker mobile application, which I originally created in CS 360 Mobile Architecture and Programming. This application allows users to create an account, log in, set a goal weight, record weight entries, and store that information in a local SQLite database.</p>
+  <h3>Why I Selected This Artifact</h3>
+  <p>I selected this artifact for my ePortfolio because it already included a useful collection of weight-entry data, which made it a strong candidate for an algorithms and data structures enhancement.</p>
+  <h3>Enhancement Performed</h3>
+  <p>To enhance the artifact, I implemented a weight-analysis feature that processes the list of stored entries and calculates summary information including starting weight, current weight, total change, average weight, distance from goal, and overall trend. To do this, I created a helper class that copies the list, sorts the entries in chronological order, iterates through the data, computes averages, and compares earlier values to more recent values to classify the user's trend as gaining, losing, or stable.</p>
+  <h3>Reflection</h3>
+  <p>Through this process, I learned that even a simple list of stored data can become much more useful when it is processed intentionally. One challenge I faced was deciding how to design a trend algorithm that was simple enough for the current application but still meaningful and easy to explain.</p>
+</section>
+<section class="files">
+  <h2>Files</h2>
+  <a href="assets/docs/Weight Tracker Original.zip">Original Artifact</a>
+  <a href="assets/docs/Weight Tracker Final.zip">Enhanced Artifact</a>
+  <a href="assets/docs/Algorithms and Data Structures Narrative.docx">Narrative (.docx)</a>
+</section>
+
+  </main>
+  <div class="footer">CS 499 ePortfolio • Weight Tracker artifact • GitHub Pages starter</div>
+</body>
+</html>
